@@ -3,6 +3,7 @@ package com.example.student.controller;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -18,25 +19,25 @@ import com.example.student.service.StudentService;
 
 
 @RestController
-@RequestMapping("/Stud")
+@RequestMapping("/stud")
 public class StudentController {
 	
 	@Autowired
 	private StudentService studentService;
 	
-	@PostMapping("/save")
+	@PostMapping(path="/save",consumes= {MediaType.APPLICATION_XML_VALUE})
 	public Student addStudent (@RequestBody Student student) {
 		return studentService.saveStudent(student);
 	}
 	
 
-	@GetMapping("/allEmp")
+	@GetMapping("/allStud")
 	public List<Student> getAll() {
 		return studentService.getAllStudents();
 	}
 
-	@GetMapping("/{id}")
-	public Student getEmpById(@PathVariable int id) {
+	@GetMapping(path="/{id}",produces= {MediaType.APPLICATION_XML_VALUE,MediaType.APPLICATION_JSON_VALUE})
+	public Student getStudById(@PathVariable int id) {
 		Student student = studentService.getStudentById(id);
 		return student;
 	}
