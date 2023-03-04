@@ -22,7 +22,7 @@ public interface StudentRepository extends JpaRepository<Student, Integer>{
 
 	//ResponseEntity and CustumEntity
 	
-	@Query(value = "Select * from Student where stud_Name=:name and stud_Address=:address,nativeQuery=true")
+	@Query(value = "Select * from Student where stud_Name =:name and stud_Address =:address,nativeQuery=true")
 	public Student getdata(@Param( value = "name")String name, @Param( value = "address")String address);
 	
 	

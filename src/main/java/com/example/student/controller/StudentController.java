@@ -3,7 +3,9 @@ package com.example.student.controller;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -42,27 +44,28 @@ public class StudentController {
 	}
 	
 	@GetMapping("/allStud/{Page}")
-	public List<Student> getStudentsByPage(@PathVariable int page) {
-	    return studentService.getAllStudentByPage(page,2);
+	public ResponseEntity<List<Student>> getStudentsByPage(@PathVariable int page) {
+	   List<Student>bypage=studentService.getAllStudentByPage(page, 2);
+		return new ResponseEntity<List<Student>>(bypage,HttpStatus.OK);
 	}
 	
-	@GetMapping (path="{name}")
+	@GetMapping (path="/{name}")
 	public List<Student>test(@PathVariable String name){
 		List<Student>findByName=studentRepository .findByName(name);
 		return findByName;
 		
 	}
 	
-	@GetMapping (path="{name}/{address}")
+	@GetMapping (path="/{name}/{address}")
 	public Student test(@PathVariable String name,@PathVariable String address){
 		Student findByName=studentRepository .findByNameAndAddress(name,address);
 		return findByName;
 	}
 
-	@GetMapping (path="{name}/{address}")
-	public Student test1(@PathVariable String name,@PathVariable String address){
+	@GetMapping (path="/{name}/{address}")
+	public ResponseEntity<Student> test1(@PathVariable String name,@PathVariable String address){
 		Student findByName=studentRepository .getdata(name,address);
-		return findByName;
+		return new ResponseEntity<Student>(findByName,HttpStatus.OK);
 	}
 
 	@GetMapping(path="/{id}",produces= {MediaType.APPLICATION_JSON_VALUE,MediaType.APPLICATION_JSON_VALUE})
