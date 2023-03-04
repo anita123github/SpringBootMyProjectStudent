@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.example.student.entity.Student;
+import com.example.student.reposiratory.StudentRepository;
 import com.example.student.service.StudentService;
 
 
@@ -25,6 +26,9 @@ public class StudentController {
 	@Autowired
 	private StudentService studentService;
 	
+	@Autowired
+	private StudentRepository studentRepository;
+	
 	@PostMapping(path="/save",consumes= {MediaType.APPLICATION_XML_VALUE})
 	public Student addStudent (@RequestBody Student student) {
 		return studentService.saveStudent(student);
@@ -33,7 +37,26 @@ public class StudentController {
 
 	@GetMapping("/allStud")
 	public List<Student> getAll() {
-		return studentService.getAllStudents();
+		//return studentService.getAllStudents();
+		return studentService.getAllStudentsSorting();
+	}
+	
+	@GetMapping("/allStud/{Page}")
+	public List<Student> getStudentsByPage(@PathVariable int page) {
+	    return studentService.getAllStudentByPage(page,2);
+	}
+	
+	@GetMapping (path="{name}")
+	public List<Student>test(@PathVariable String name){
+		List<Student>findByName=studentRepository .findByName(name);
+		return findByName;
+		
+	}
+	
+	@GetMapping (path="{name}/{address}")
+	public Student test(@PathVariable String name,@PathVariable String address){
+		Student findByName=studentRepository .findByNameAndAddress(name,address);
+		return findByName;
 	}
 
 	@GetMapping(path="/{id}",produces= {MediaType.APPLICATION_XML_VALUE,MediaType.APPLICATION_JSON_VALUE})

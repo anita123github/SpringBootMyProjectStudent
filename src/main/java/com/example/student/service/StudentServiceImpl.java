@@ -4,6 +4,9 @@ import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
 import com.example.student.entity.Student;
@@ -55,6 +58,29 @@ public class StudentServiceImpl implements StudentService {
 	public String deleteStudentById(int id) {
 		studentRepository.deleteById(id);
 		return "Student deleted";
+	}
+
+
+	@Override
+	public List<Student> getAllStudentByPage(int page, int size) {
+		PageRequest request=PageRequest.of(page, size);
+		Page<Student>pageResponse=studentRepository .findAll(request);
+		List<Student>listStudents =pageResponse.getContent();
+		return listStudents;
+	}
+
+
+	@Override
+	public List<Student> getAlltudentBySorting() {
+		List<Student>findAll=studentRepository.findAll(Sort.by("name").ascending());
+		return findAll;
+	}
+
+
+	@Override
+	public List<Student> getAllStudentsSorting() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 }

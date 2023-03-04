@@ -14,5 +14,11 @@ public interface StudentService {
 
 	int updateStudent(int id, Student student);
 
-String deleteStudentById(int id);
+    String deleteStudentById(int id);
+    
+    List<Student>getAllStudentByPage(int page,int size);
+    
+    List<Student> getAlltudentBySorting();
+
+	List<Student> getAllStudentsSorting();
 }
