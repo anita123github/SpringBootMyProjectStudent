@@ -49,16 +49,16 @@ public class StudentController {
 	}
 
 	@PutMapping("/update")
-	public String updateEmp(@RequestBody Student student) {
+	public String updateStud(@RequestBody Student student) {
 		int id = studentService.updateStudent(student.getId(),student);
 		if (id ==0) {
-			return "employee not found";
+			return "student not found";
 		}
 		return String.format("Student is updated for the id ::%d", id);
 	}
 
 	@DeleteMapping("/delete/{id}")
-	public String deleteEmp( @PathVariable int id) {
+	public String deleteStud( @PathVariable int id) {
 		String response = studentService.deleteStudentById(id);
 		return response;
 
