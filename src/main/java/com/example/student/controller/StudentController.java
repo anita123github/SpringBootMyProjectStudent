@@ -31,7 +31,7 @@ public class StudentController {
 	@Autowired
 	private StudentRepository studentRepository;
 	
-	@PostMapping(path="/save",consumes= {MediaType.APPLICATION_XML_VALUE},produces ={MediaType.APPLICATION_XML_VALUE} )
+	@PostMapping(path="/save",consumes= {MediaType.APPLICATION_XML_VALUE,MediaType.APPLICATION_JSON_VALUE},produces ={MediaType.APPLICATION_JSON_VALUE,MediaType.APPLICATION_XML_VALUE} )
 	public Student addStudent (@RequestBody Student student) {
 		return studentService.saveStudent(student);
 	}
@@ -69,7 +69,7 @@ public class StudentController {
 		return new ResponseEntity<Student>(findByName,HttpStatus.OK);
 	}
 
-	@GetMapping(path="/{id}",produces= {MediaType.APPLICATION_XML_VALUE})
+	@GetMapping(path="/{id}",produces= {MediaType.APPLICATION_XML_VALUE,MediaType.APPLICATION_JSON_VALUE})
 	public Student getStudById(@PathVariable int id) {
 		Student student = studentService.getStudentById(id);
 		return student;
