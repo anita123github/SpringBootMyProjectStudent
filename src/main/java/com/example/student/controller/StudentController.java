@@ -31,7 +31,7 @@ public class StudentController {
 	@Autowired
 	private StudentRepository studentRepository;
 	
-	@PostMapping(path="/save",consumes= {MediaType.APPLICATION_JSON_VALUE},produces ={MediaType.APPLICATION_JSON_VALUE} )
+	@PostMapping(path="/save",consumes= {MediaType.APPLICATION_XML_VALUE},produces ={MediaType.APPLICATION_XML_VALUE} )
 	public Student addStudent (@RequestBody Student student) {
 		return studentService.saveStudent(student);
 	}
@@ -43,6 +43,7 @@ public class StudentController {
 		return studentService.getAllStudentsSorting();
 	}
 	
+		
 	@GetMapping("/allStud/{Page}")
 	public ResponseEntity<List<Student>> getStudentsByPage(@PathVariable int page) {
 	   List<Student>bypage=studentService.getAllStudentByPage(page, 2);
@@ -55,20 +56,20 @@ public class StudentController {
 		return findByName;
 		
 	}
-	
+	/*
 	@GetMapping (path="/{name}/{address}")
 	public Student test(@PathVariable String name,@PathVariable String address){
 		Student findByName=studentRepository .findByNameAndAddress(name,address);
 		return findByName;
-	}
+	}*/
 
 	@GetMapping (path="/{name}/{address}")
-	public ResponseEntity<Student> test1(@PathVariable String name,@PathVariable String address){
+	public ResponseEntity<Student> test(@PathVariable String name,@PathVariable String address){
 		Student findByName=studentRepository .getdata(name,address);
 		return new ResponseEntity<Student>(findByName,HttpStatus.OK);
 	}
 
-	@GetMapping(path="/{id}",produces= {MediaType.APPLICATION_JSON_VALUE,MediaType.APPLICATION_JSON_VALUE})
+	@GetMapping(path="/{id}",produces= {MediaType.APPLICATION_XML_VALUE})
 	public Student getStudById(@PathVariable int id) {
 		Student student = studentService.getStudentById(id);
 		return student;
