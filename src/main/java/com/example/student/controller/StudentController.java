@@ -2,6 +2,8 @@ package com.example.student.controller;
 
 import java.util.List;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
@@ -17,13 +19,18 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.example.student.entity.Student;
+import com.example.student.exception.NoSuchElementFoundException;
 import com.example.student.reposiratory.StudentRepository;
 import com.example.student.service.StudentService;
+
+
 
 
 @RestController
 @RequestMapping("/stud")
 public class StudentController {
+
+	private static final Logger Log=LoggerFactory.getLogger(StudentController.class);
 	
 	@Autowired
 	private StudentService studentService;
@@ -69,11 +76,23 @@ public class StudentController {
 		return new ResponseEntity<Student>(findByName,HttpStatus.OK);
 	}
 
-	@GetMapping(path="/{id}",produces= {MediaType.APPLICATION_XML_VALUE,MediaType.APPLICATION_JSON_VALUE})
-	public Student getStudById(@PathVariable int id) {
+	@GetMapping(path="/id/{id}")
+	public ResponseEntity<Student>getStudById(@PathVariable int id){
+		Log.info("Start:StudentController--->getStudById id is{}",id);
 		Student student = studentService.getStudentById(id);
-		return student;
-	}
+		if(student!=null) {
+			Log.info("End:StudentController--->getStudById id is{}",id);	
+			return new ResponseEntity<Student>(student,HttpStatus.OK);
+			}
+			else {
+				Log.error("NoSuchElementFoundException:Student with id is not found");
+				throw new NoSuchElementFoundException("Student with id is not found");
+			}
+		
+		
+		}
+		
+	
 
 	@GetMapping("/request")
 	public Student getById(@RequestParam("studcode") int id) {
