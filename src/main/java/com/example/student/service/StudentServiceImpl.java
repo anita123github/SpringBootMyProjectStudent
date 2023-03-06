@@ -1,6 +1,7 @@
 package com.example.student.service;
 
 import java.util.List;
+import java.util.NoSuchElementException;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -36,8 +37,7 @@ public class StudentServiceImpl implements StudentService {
 
 	@Override
 	public Student getStudentById(int id) {
-		Optional<Student> response =studentRepository.findById(id);
-		return response.isPresent() ? response.get() : null;
+		return studentRepository.findById(id).orElseThrow(()->new NoSuchElementException("Element with given id not found"));
 	}
 
 
@@ -59,7 +59,8 @@ public class StudentServiceImpl implements StudentService {
 		studentRepository.deleteById(id);
 		return "Student deleted";
 	}
-
+	
+	
 
 	@Override
 	public List<Student> getAllStudentByPage(int page, int size) {
@@ -71,7 +72,7 @@ public class StudentServiceImpl implements StudentService {
 
 
 	@Override
-	public List<Student> getAlltudentBySorting() {
+	public List<Student> getAllStudentBySorting() {
 		List<Student>findAll=studentRepository.findAll(Sort.by("name").ascending());
 		return findAll;
 	}
@@ -79,8 +80,8 @@ public class StudentServiceImpl implements StudentService {
 
 	@Override
 	public List<Student> getAllStudentsSorting() {
-		// TODO Auto-generated method stub
-		return null;
+		List<Student>findAll=studentRepository.findAll(Sort.by("name").ascending());
+		return findAll;
 	}
 
 }

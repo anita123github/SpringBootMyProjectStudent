@@ -31,7 +31,7 @@ public class StudentController {
 	@Autowired
 	private StudentRepository studentRepository;
 	
-	@PostMapping(path="/save",consumes= {MediaType.APPLICATION_XML_VALUE,MediaType.APPLICATION_JSON_VALUE},produces ={MediaType.APPLICATION_JSON_VALUE,MediaType.APPLICATION_XML_VALUE} )
+	@PostMapping(path="/save",consumes= {MediaType.APPLICATION_JSON_VALUE},produces ={MediaType.APPLICATION_JSON_VALUE} )
 	public Student addStudent (@RequestBody Student student) {
 		return studentService.saveStudent(student);
 	}

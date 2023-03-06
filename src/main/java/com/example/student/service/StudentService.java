@@ -18,7 +18,7 @@ public interface StudentService {
     
     List<Student>getAllStudentByPage(int page,int size);
     
-    List<Student> getAlltudentBySorting();
+    List<Student> getAllStudentBySorting();
 
 	List<Student> getAllStudentsSorting();
 }
