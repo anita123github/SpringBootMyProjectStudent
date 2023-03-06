@@ -15,26 +15,30 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 public class SwaggerConfig {
 
-@Bean
+	@Bean
 	public Docket docket() {
-		
 		return new Docket(DocumentationType.SWAGGER_2)
-		.groupName("Student APIs")
-		.apiInfo(ApiInfo())
-		.select()
-		.apis(RequestHandlerSelectors.basePackage("com.example.student.controller"))
-		.paths(PathSelectors.any())
-		.build();
+				.groupName("Employee APIs")
+				.apiInfo(apiInfo())
+				.select()
+				.apis(RequestHandlerSelectors.basePackage("com.velocity.controller"))
+				.paths(PathSelectors.any())
+				.build();
 		
 	}
 
-	private ApiInfo ApiInfo() {
-				return new ApiInfoBuilder().title("Student APIs Details")
-				.description("Spring Rest APIs Doc")
-				.version("1.0")
-				.build();
+	private ApiInfo apiInfo() {
 
-	          }
+		return new ApiInfoBuilder().title("Student APIs Details")
+		.description("Spring Rest APIs Doc")
+		.version("1.0")
+		.build();
+
+     
+	}
+
+
+	
     }
 
 
