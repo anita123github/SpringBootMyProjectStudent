@@ -23,7 +23,8 @@ import io.restassured.specification.RequestSpecification;
 
 @SpringBootTest(webEnvironment = WebEnvironment.RANDOM_PORT)
 @TestPropertySource("classpath:/application-junit.properties")
-public class StudentControllerTest {
+public class StudentControllerTest {  
+	
 	@LocalServerPort
 	private int port;
 	
@@ -37,6 +38,7 @@ public class StudentControllerTest {
 		final RequestSpecBuilder tempSpec=new RequestSpecBuilder();
 		requestSpecification =tempSpec.setBaseUri("http://localhost:"+port+"/stud").build();
 	}
+	
     @Test
     public void testAddEmployee() {
     	//Given
@@ -51,7 +53,7 @@ public class StudentControllerTest {
 			
 		//then
 		Student studresult=result.extract().as(Student .class);
-		assertNotNull(result);
+		assertNotNull(studresult);
 		assertEquals("vishal",studresult.getName());
 	
     	}
@@ -66,27 +68,27 @@ public class StudentControllerTest {
 		
 		//When
 		ValidatableResponse result=RestAssured.given(requestSpecification)
-				.get("/1").then();
+				.get("id/1").then();
 		
 		//Then
-		Student as=result .extract().as(Student.class);
+		Student as=result.extract().as(Student.class);
 		assertNotNull(as);
     }
+    	@Test
 		public void testGetById() {
 			//Given
 	    	Student student =new Student();
-			student.setName("niku");
-			student.setAddress("nanded");
+			student.setName("vishal");
+			student.setAddress("mumbai");
 			studentRepository.save(student);
-			assertEquals(1, studentRepository.count());
+			assertEquals(2, studentRepository.count());
 			
 			//When
 			ValidatableResponse result=RestAssured.given(requestSpecification)
 					.queryParam("studcode",1).get("/request").then();
 			
-
 			//Then
-			Student as=result .extract().as(Student.class);
+			Student as=result.extract().as(Student.class);
 			assertNotNull(as);
 		}
     }
