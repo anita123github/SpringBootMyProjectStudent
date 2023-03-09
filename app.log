@@ -1,0 +1,232 @@
+2023-03-09 15:03:02.648  INFO 12400 --- [main] c.e.s.service.StudentServiceImplTest     : Starting StudentServiceImplTest using Java 1.8.0_241 on DESKTOP-GEC9DFH with PID 12400 (started by USER in C:\Users\USER\Documents\workspace-spring-tool-suite-4-4.17.2.RELEASE\SpringBootMyProjectStudent)
+2023-03-09 15:03:02.700  INFO 12400 --- [main] c.e.s.service.StudentServiceImplTest     : No active profile set, falling back to 1 default profile: "default"
+2023-03-09 15:03:08.165  INFO 12400 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-09 15:03:08.404  INFO 12400 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 201 ms. Found 1 JPA repository interfaces.
+2023-03-09 15:03:09.738  INFO 12400 --- [main] o.s.c.a.ConfigurationClassEnhancer       : @Bean method SwaggerAutoConfiguration.docketBeanFactoryPostProcessor is non-static and returns an object assignable to Spring's BeanFactoryPostProcessor interface. This will result in a failure to process annotations such as @Autowired, @Resource and @PostConstruct within the method's declaring @Configuration class. Add the 'static' modifier to this method to avoid these container lifecycle issues; see @Bean javadoc for complete details.
+2023-03-09 15:03:11.739  INFO 12400 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-09 15:03:12.067  INFO 12400 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-03-09 15:03:12.858  INFO 12400 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-03-09 15:03:14.112  INFO 12400 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-03-09 15:03:15.058  INFO 12400 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-03-09 15:03:15.153  INFO 12400 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-03-09 15:03:17.645  INFO 12400 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-09 15:03:17.688  INFO 12400 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-09 15:03:24.953  WARN 12400 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-09 15:03:25.680  INFO 12400 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2023-03-09 15:03:32.361  INFO 12400 --- [main] c.e.s.service.StudentServiceImplTest     : Started StudentServiceImplTest in 31.425 seconds (JVM running for 35.605)
+2023-03-09 15:03:34.201  INFO 12400 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-03-09 15:03:34.211  INFO 12400 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-03-09 15:03:34.228  INFO 12400 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-03-09 15:04:12.648  INFO 2372 --- [main] c.e.s.controller.StudentControllerTest   : Starting StudentControllerTest using Java 1.8.0_241 on DESKTOP-GEC9DFH with PID 2372 (started by USER in C:\Users\USER\Documents\workspace-spring-tool-suite-4-4.17.2.RELEASE\SpringBootMyProjectStudent)
+2023-03-09 15:04:12.680  INFO 2372 --- [main] c.e.s.controller.StudentControllerTest   : No active profile set, falling back to 1 default profile: "default"
+2023-03-09 15:04:16.909  INFO 2372 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-09 15:04:17.146  INFO 2372 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 200 ms. Found 1 JPA repository interfaces.
+2023-03-09 15:04:18.551  INFO 2372 --- [main] o.s.c.a.ConfigurationClassEnhancer       : @Bean method SwaggerAutoConfiguration.docketBeanFactoryPostProcessor is non-static and returns an object assignable to Spring's BeanFactoryPostProcessor interface. This will result in a failure to process annotations such as @Autowired, @Resource and @PostConstruct within the method's declaring @Configuration class. Add the 'static' modifier to this method to avoid these container lifecycle issues; see @Bean javadoc for complete details.
+2023-03-09 15:04:21.176  INFO 2372 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2023-03-09 15:04:21.259  INFO 2372 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-09 15:04:21.261  INFO 2372 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-03-09 15:04:22.464  INFO 2372 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-09 15:04:22.471  INFO 2372 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 8894 ms
+2023-03-09 15:04:22.683  INFO 2372 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-03-09 15:04:23.711  INFO 2372 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-03-09 15:04:23.837  INFO 2372 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2023-03-09 15:04:25.367  INFO 2372 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-09 15:04:25.638  INFO 2372 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-03-09 15:04:26.585  INFO 2372 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-03-09 15:04:27.127  INFO 2372 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-03-09 15:04:30.165  INFO 2372 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-09 15:04:30.205  INFO 2372 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-09 15:04:34.677  WARN 2372 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-09 15:04:40.676  INFO 2372 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 63226 (http) with context path ''
+2023-03-09 15:04:41.676  INFO 2372 --- [main] c.e.s.controller.StudentControllerTest   : Started StudentControllerTest in 30.554 seconds (JVM running for 34.024)
+2023-03-09 15:04:49.013  INFO 2372 --- [http-nio-auto-1-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-09 15:04:49.018  INFO 2372 --- [http-nio-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-03-09 15:04:49.022  INFO 2372 --- [http-nio-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-03-09 15:04:50.926  INFO 2372 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-03-09 15:04:50.941  INFO 2372 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-03-09 15:04:50.980  INFO 2372 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-03-09 15:08:41.777  INFO 8180 --- [main] c.e.s.controller.StudentControllerTest   : Starting StudentControllerTest using Java 1.8.0_241 on DESKTOP-GEC9DFH with PID 8180 (started by USER in C:\Users\USER\Documents\workspace-spring-tool-suite-4-4.17.2.RELEASE\SpringBootMyProjectStudent)
+2023-03-09 15:08:41.783  INFO 8180 --- [main] c.e.s.controller.StudentControllerTest   : No active profile set, falling back to 1 default profile: "default"
+2023-03-09 15:08:47.186  INFO 8180 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-09 15:08:47.396  INFO 8180 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 178 ms. Found 1 JPA repository interfaces.
+2023-03-09 15:08:48.478  INFO 8180 --- [main] o.s.c.a.ConfigurationClassEnhancer       : @Bean method SwaggerAutoConfiguration.docketBeanFactoryPostProcessor is non-static and returns an object assignable to Spring's BeanFactoryPostProcessor interface. This will result in a failure to process annotations such as @Autowired, @Resource and @PostConstruct within the method's declaring @Configuration class. Add the 'static' modifier to this method to avoid these container lifecycle issues; see @Bean javadoc for complete details.
+2023-03-09 15:08:50.692  INFO 8180 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2023-03-09 15:08:50.732  INFO 8180 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-09 15:08:50.734  INFO 8180 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-03-09 15:08:51.538  INFO 8180 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-09 15:08:51.550  INFO 8180 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 8690 ms
+2023-03-09 15:08:51.853  INFO 8180 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-03-09 15:08:52.926  INFO 8180 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-03-09 15:08:52.986  INFO 8180 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2023-03-09 15:08:53.978  INFO 8180 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-09 15:08:54.802  INFO 8180 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-03-09 15:08:55.556  INFO 8180 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-03-09 15:08:56.363  INFO 8180 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-03-09 15:08:59.242  INFO 8180 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-09 15:08:59.282  INFO 8180 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-09 15:09:04.256  WARN 8180 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-09 15:09:10.320  INFO 8180 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 63257 (http) with context path ''
+2023-03-09 15:09:11.358  INFO 8180 --- [main] c.e.s.controller.StudentControllerTest   : Started StudentControllerTest in 31.251 seconds (JVM running for 34.94)
+2023-03-09 15:09:17.886  INFO 8180 --- [http-nio-auto-1-exec-10] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-09 15:09:17.888  INFO 8180 --- [http-nio-auto-1-exec-10] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-03-09 15:09:17.892  INFO 8180 --- [http-nio-auto-1-exec-10] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-03-09 15:09:19.187  INFO 8180 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-03-09 15:09:19.194  INFO 8180 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-03-09 15:09:19.200  INFO 8180 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-03-09 15:13:43.701  INFO 2328 --- [main] c.e.s.controller.StudentControllerTest   : Starting StudentControllerTest using Java 1.8.0_241 on DESKTOP-GEC9DFH with PID 2328 (started by USER in C:\Users\USER\Documents\workspace-spring-tool-suite-4-4.17.2.RELEASE\SpringBootMyProjectStudent)
+2023-03-09 15:13:43.709  INFO 2328 --- [main] c.e.s.controller.StudentControllerTest   : No active profile set, falling back to 1 default profile: "default"
+2023-03-09 15:13:48.172  INFO 2328 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-09 15:13:48.371  INFO 2328 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 169 ms. Found 1 JPA repository interfaces.
+2023-03-09 15:13:49.393  INFO 2328 --- [main] o.s.c.a.ConfigurationClassEnhancer       : @Bean method SwaggerAutoConfiguration.docketBeanFactoryPostProcessor is non-static and returns an object assignable to Spring's BeanFactoryPostProcessor interface. This will result in a failure to process annotations such as @Autowired, @Resource and @PostConstruct within the method's declaring @Configuration class. Add the 'static' modifier to this method to avoid these container lifecycle issues; see @Bean javadoc for complete details.
+2023-03-09 15:13:52.094  INFO 2328 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2023-03-09 15:13:52.133  INFO 2328 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-09 15:13:52.135  INFO 2328 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-03-09 15:13:52.735  INFO 2328 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-09 15:13:52.743  INFO 2328 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 7996 ms
+2023-03-09 15:13:52.948  INFO 2328 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-03-09 15:13:54.039  INFO 2328 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-03-09 15:13:54.091  INFO 2328 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2023-03-09 15:13:55.513  INFO 2328 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-09 15:13:55.754  INFO 2328 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-03-09 15:13:56.498  INFO 2328 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-03-09 15:13:56.991  INFO 2328 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-03-09 15:13:59.526  INFO 2328 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-09 15:13:59.561  INFO 2328 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-09 15:14:03.339  WARN 2328 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-09 15:14:09.734  INFO 2328 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 63281 (http) with context path ''
+2023-03-09 15:14:11.444  INFO 2328 --- [main] c.e.s.controller.StudentControllerTest   : Started StudentControllerTest in 29.475 seconds (JVM running for 32.782)
+2023-03-09 15:14:17.069  INFO 2328 --- [http-nio-auto-1-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-09 15:14:17.077  INFO 2328 --- [http-nio-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-03-09 15:14:17.083  INFO 2328 --- [http-nio-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2023-03-09 15:14:18.400  INFO 2328 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-03-09 15:14:18.407  INFO 2328 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-03-09 15:14:18.416  INFO 2328 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-03-09 15:15:02.741  INFO 11040 --- [main] c.e.s.controller.StudentControllerTest   : Starting StudentControllerTest using Java 1.8.0_241 on DESKTOP-GEC9DFH with PID 11040 (started by USER in C:\Users\USER\Documents\workspace-spring-tool-suite-4-4.17.2.RELEASE\SpringBootMyProjectStudent)
+2023-03-09 15:15:02.749  INFO 11040 --- [main] c.e.s.controller.StudentControllerTest   : No active profile set, falling back to 1 default profile: "default"
+2023-03-09 15:15:08.149  INFO 11040 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-09 15:15:08.467  INFO 11040 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 265 ms. Found 1 JPA repository interfaces.
+2023-03-09 15:15:09.305  INFO 11040 --- [main] o.s.c.a.ConfigurationClassEnhancer       : @Bean method SwaggerAutoConfiguration.docketBeanFactoryPostProcessor is non-static and returns an object assignable to Spring's BeanFactoryPostProcessor interface. This will result in a failure to process annotations such as @Autowired, @Resource and @PostConstruct within the method's declaring @Configuration class. Add the 'static' modifier to this method to avoid these container lifecycle issues; see @Bean javadoc for complete details.
+2023-03-09 15:15:11.594  INFO 11040 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2023-03-09 15:15:11.630  INFO 11040 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-09 15:15:11.633  INFO 11040 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-03-09 15:15:12.171  INFO 11040 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-09 15:15:12.175  INFO 11040 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 8185 ms
+2023-03-09 15:15:12.373  INFO 11040 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-03-09 15:15:13.171  INFO 11040 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-03-09 15:15:13.208  INFO 11040 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2023-03-09 15:15:14.899  INFO 11040 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-09 15:15:15.169  INFO 11040 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-03-09 15:15:16.023  INFO 11040 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-03-09 15:15:16.689  INFO 11040 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-03-09 15:15:20.215  INFO 11040 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-09 15:15:20.258  INFO 11040 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-09 15:15:24.959  WARN 11040 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-09 15:15:32.075  INFO 11040 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 63290 (http) with context path ''
+2023-03-09 15:15:33.053  INFO 11040 --- [main] c.e.s.controller.StudentControllerTest   : Started StudentControllerTest in 32.069 seconds (JVM running for 35.465)
+2023-03-09 15:15:39.224  INFO 11040 --- [http-nio-auto-1-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-09 15:15:39.229  INFO 11040 --- [http-nio-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-03-09 15:15:39.233  INFO 11040 --- [http-nio-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-03-09 15:15:41.015  INFO 11040 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-03-09 15:15:41.026  INFO 11040 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-03-09 15:15:41.040  INFO 11040 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-03-09 15:19:32.086  INFO 8248 --- [main] c.e.s.controller.StudentControllerTest   : Starting StudentControllerTest using Java 1.8.0_241 on DESKTOP-GEC9DFH with PID 8248 (started by USER in C:\Users\USER\Documents\workspace-spring-tool-suite-4-4.17.2.RELEASE\SpringBootMyProjectStudent)
+2023-03-09 15:19:32.096  INFO 8248 --- [main] c.e.s.controller.StudentControllerTest   : No active profile set, falling back to 1 default profile: "default"
+2023-03-09 15:19:36.777  INFO 8248 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-09 15:19:37.133  INFO 8248 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 317 ms. Found 1 JPA repository interfaces.
+2023-03-09 15:19:38.486  INFO 8248 --- [main] o.s.c.a.ConfigurationClassEnhancer       : @Bean method SwaggerAutoConfiguration.docketBeanFactoryPostProcessor is non-static and returns an object assignable to Spring's BeanFactoryPostProcessor interface. This will result in a failure to process annotations such as @Autowired, @Resource and @PostConstruct within the method's declaring @Configuration class. Add the 'static' modifier to this method to avoid these container lifecycle issues; see @Bean javadoc for complete details.
+2023-03-09 15:19:41.211  INFO 8248 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2023-03-09 15:19:41.256  INFO 8248 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-09 15:19:41.258  INFO 8248 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-03-09 15:19:42.839  INFO 8248 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-09 15:19:42.856  INFO 8248 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 9873 ms
+2023-03-09 15:19:43.588  INFO 8248 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-03-09 15:19:45.117  INFO 8248 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-03-09 15:19:45.163  INFO 8248 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2023-03-09 15:19:46.579  INFO 8248 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-09 15:19:47.023  INFO 8248 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-03-09 15:19:48.182  INFO 8248 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-03-09 15:19:48.809  INFO 8248 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-03-09 15:19:52.361  INFO 8248 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-09 15:19:52.408  INFO 8248 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-09 15:19:56.889  WARN 8248 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-09 15:20:04.518  INFO 8248 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 63336 (http) with context path ''
+2023-03-09 15:20:05.738  INFO 8248 --- [main] c.e.s.controller.StudentControllerTest   : Started StudentControllerTest in 35.403 seconds (JVM running for 38.939)
+2023-03-09 15:20:11.874  INFO 8248 --- [http-nio-auto-1-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-09 15:20:11.879  INFO 8248 --- [http-nio-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-03-09 15:20:11.884  INFO 8248 --- [http-nio-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2023-03-09 15:20:13.786  INFO 8248 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-03-09 15:20:13.794  INFO 8248 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-03-09 15:20:13.801  INFO 8248 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-03-09 15:22:20.503  INFO 7288 --- [main] .s.SpringBootMyProjectStudentApplication : Starting SpringBootMyProjectStudentApplication using Java 1.8.0_241 on DESKTOP-GEC9DFH with PID 7288 (C:\Users\USER\Documents\workspace-spring-tool-suite-4-4.17.2.RELEASE\SpringBootMyProjectStudent\target\classes started by USER in C:\Users\USER\Documents\workspace-spring-tool-suite-4-4.17.2.RELEASE\SpringBootMyProjectStudent)
+2023-03-09 15:22:20.510  INFO 7288 --- [main] .s.SpringBootMyProjectStudentApplication : No active profile set, falling back to 1 default profile: "default"
+2023-03-09 15:22:22.769  INFO 7288 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-09 15:22:22.955  INFO 7288 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 157 ms. Found 1 JPA repository interfaces.
+2023-03-09 15:22:23.552  INFO 7288 --- [main] o.s.c.a.ConfigurationClassEnhancer       : @Bean method SwaggerAutoConfiguration.docketBeanFactoryPostProcessor is non-static and returns an object assignable to Spring's BeanFactoryPostProcessor interface. This will result in a failure to process annotations such as @Autowired, @Resource and @PostConstruct within the method's declaring @Configuration class. Add the 'static' modifier to this method to avoid these container lifecycle issues; see @Bean javadoc for complete details.
+2023-03-09 15:22:24.299  INFO 7288 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8085 (http)
+2023-03-09 15:22:24.329  INFO 7288 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-09 15:22:24.331  INFO 7288 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-03-09 15:22:24.741  INFO 7288 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-09 15:22:24.752  INFO 7288 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4133 ms
+2023-03-09 15:22:25.421  INFO 7288 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-09 15:22:25.569  INFO 7288 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-03-09 15:22:26.092  INFO 7288 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-03-09 15:22:26.447  INFO 7288 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-03-09 15:22:27.518  INFO 7288 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-03-09 15:22:27.570  INFO 7288 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-03-09 15:22:29.812  INFO 7288 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-09 15:22:29.836  INFO 7288 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-09 15:22:31.400  WARN 7288 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-09 15:22:32.409  INFO 7288 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8085 (http) with context path ''
+2023-03-09 15:22:33.001  INFO 7288 --- [main] .s.SpringBootMyProjectStudentApplication : Started SpringBootMyProjectStudentApplication in 13.519 seconds (JVM running for 15.116)
+2023-03-09 15:24:31.360  INFO 7288 --- [RMI TCP Connection(10)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2023-03-09 15:24:31.653  INFO 7288 --- [RMI TCP Connection(10)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-03-09 15:24:31.770  INFO 7288 --- [RMI TCP Connection(10)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-03-09 15:24:31.827  INFO 7288 --- [RMI TCP Connection(10)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-03-09 15:24:31.928  INFO 7288 --- [RMI TCP Connection(10)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-03-09 15:56:38.389  INFO 8292 --- [main] c.e.s.service.StudentServiceImplTest     : Starting StudentServiceImplTest using Java 1.8.0_241 on DESKTOP-GEC9DFH with PID 8292 (started by USER in C:\Users\USER\Documents\workspace-spring-tool-suite-4-4.17.2.RELEASE\SpringBootMyProjectStudent)
+2023-03-09 15:56:38.398  INFO 8292 --- [main] c.e.s.service.StudentServiceImplTest     : No active profile set, falling back to 1 default profile: "default"
+2023-03-09 15:56:43.797  INFO 8292 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-09 15:56:44.036  INFO 8292 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 197 ms. Found 1 JPA repository interfaces.
+2023-03-09 15:56:45.234  INFO 8292 --- [main] o.s.c.a.ConfigurationClassEnhancer       : @Bean method SwaggerAutoConfiguration.docketBeanFactoryPostProcessor is non-static and returns an object assignable to Spring's BeanFactoryPostProcessor interface. This will result in a failure to process annotations such as @Autowired, @Resource and @PostConstruct within the method's declaring @Configuration class. Add the 'static' modifier to this method to avoid these container lifecycle issues; see @Bean javadoc for complete details.
+2023-03-09 15:56:47.714  INFO 8292 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-09 15:56:48.210  INFO 8292 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-03-09 15:56:48.985  INFO 8292 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-03-09 15:56:49.854  INFO 8292 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-03-09 15:56:51.021  INFO 8292 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-03-09 15:56:51.101  INFO 8292 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-03-09 15:56:54.045  INFO 8292 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-09 15:56:54.091  INFO 8292 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-09 15:56:59.462  WARN 8292 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-09 15:57:00.000  INFO 8292 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2023-03-09 15:57:07.127  INFO 8292 --- [main] c.e.s.service.StudentServiceImplTest     : Started StudentServiceImplTest in 30.202 seconds (JVM running for 35.3)
+2023-03-09 15:57:09.098  INFO 8292 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-03-09 15:57:09.111  INFO 8292 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-03-09 15:57:09.124  INFO 8292 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-03-09 15:57:49.842  INFO 5036 --- [main] c.e.s.controller.StudentControllerTest   : Starting StudentControllerTest using Java 1.8.0_241 on DESKTOP-GEC9DFH with PID 5036 (started by USER in C:\Users\USER\Documents\workspace-spring-tool-suite-4-4.17.2.RELEASE\SpringBootMyProjectStudent)
+2023-03-09 15:57:49.846  INFO 5036 --- [main] c.e.s.controller.StudentControllerTest   : No active profile set, falling back to 1 default profile: "default"
+2023-03-09 15:57:54.963  INFO 5036 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-09 15:57:55.612  INFO 5036 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 612 ms. Found 1 JPA repository interfaces.
+2023-03-09 15:57:57.089  INFO 5036 --- [main] o.s.c.a.ConfigurationClassEnhancer       : @Bean method SwaggerAutoConfiguration.docketBeanFactoryPostProcessor is non-static and returns an object assignable to Spring's BeanFactoryPostProcessor interface. This will result in a failure to process annotations such as @Autowired, @Resource and @PostConstruct within the method's declaring @Configuration class. Add the 'static' modifier to this method to avoid these container lifecycle issues; see @Bean javadoc for complete details.
+2023-03-09 15:57:59.906  INFO 5036 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2023-03-09 15:58:00.016  INFO 5036 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-09 15:58:00.018  INFO 5036 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-03-09 15:58:00.814  INFO 5036 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-09 15:58:00.834  INFO 5036 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 9790 ms
+2023-03-09 15:58:01.102  INFO 5036 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-03-09 15:58:02.170  INFO 5036 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-03-09 15:58:02.213  INFO 5036 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2023-03-09 15:58:03.492  INFO 5036 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-09 15:58:03.763  INFO 5036 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-03-09 15:58:04.575  INFO 5036 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-03-09 15:58:05.141  INFO 5036 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-03-09 15:58:08.686  INFO 5036 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-09 15:58:08.731  INFO 5036 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-09 15:58:13.137  WARN 5036 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-09 15:58:21.254  INFO 5036 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 49962 (http) with context path ''
+2023-03-09 15:58:22.381  INFO 5036 --- [main] c.e.s.controller.StudentControllerTest   : Started StudentControllerTest in 33.849 seconds (JVM running for 37.53)
+2023-03-09 15:58:27.195  INFO 5036 --- [http-nio-auto-1-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-09 15:58:27.202  INFO 5036 --- [http-nio-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-03-09 15:58:27.206  INFO 5036 --- [http-nio-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-03-09 15:58:29.754  INFO 5036 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-03-09 15:58:29.762  INFO 5036 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-03-09 15:58:29.776  INFO 5036 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

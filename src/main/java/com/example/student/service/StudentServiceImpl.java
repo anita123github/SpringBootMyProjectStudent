@@ -94,10 +94,10 @@ public class StudentServiceImpl implements StudentService {
 	}
 
 
-	@Override
+	/*@Override
 	public List<Student> getAllStudentsSorting() {
 		List<Student>findAll=studentRepository.findAll(Sort.by("name").ascending());
 		return findAll;
 	}
-
+*/
 }

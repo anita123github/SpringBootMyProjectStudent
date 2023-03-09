@@ -23,9 +23,6 @@ import com.example.student.exception.NoSuchElementFoundException;
 import com.example.student.reposiratory.StudentRepository;
 import com.example.student.service.StudentService;
 
-
-
-
 @RestController
 @RequestMapping("/stud")
 public class StudentController {
@@ -47,7 +44,7 @@ public class StudentController {
 	@GetMapping("/allStud")
 	public List<Student> getAll() {
 		//return studentService.getAllStudents();
-		return studentService.getAllStudentsSorting();
+		return studentService.getAllStudentBySorting();
 	}
 	
 		

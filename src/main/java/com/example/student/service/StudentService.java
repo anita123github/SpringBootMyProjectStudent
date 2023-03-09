@@ -20,5 +20,5 @@ public interface StudentService {
     
     List<Student> getAllStudentBySorting();
 
-	List<Student> getAllStudentsSorting();
+	//List<Student> getAllStudentsSorting();
 }
